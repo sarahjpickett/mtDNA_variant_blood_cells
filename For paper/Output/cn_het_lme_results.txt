@@ -1,0 +1,24 @@
+Linear mixed-effects model fit by REML
+  Data: subset(all, !is.na(log_cn) & type == "Patient") 
+       AIC      BIC    logLik
+  241.5345 254.2391 -116.7673
+
+Random effects:
+ Formula: ~1 | pnums
+        (Intercept)  Residual
+StdDev:   0.1911135 0.4262246
+
+Fixed effects:  log_cn ~ het 
+               Value  Std.Error  DF  t-value p-value
+(Intercept) 1.039883 0.08292304 162 12.54034  0.0000
+het         0.005409 0.00241222 162  2.24234  0.0263
+ Correlation: 
+    (Intr)
+het -0.72 
+
+Standardized Within-Group Residuals:
+       Min         Q1        Med         Q3        Max 
+-2.9405270 -0.7298869  0.1570002  0.6726082  2.2230730 
+
+Number of Observations: 179
+Number of Groups: 16 

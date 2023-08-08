@@ -1,0 +1,65 @@
+Linear mixed-effects model fit by REML
+  Data: subset(minusWB, !is.na(het)) 
+       AIC      BIC    logLik
+  2125.417 2188.994 -1045.709
+
+Random effects:
+ Formula: ~1 | pnums
+        (Intercept) Residual
+StdDev:    16.29892 5.499416
+
+Fixed effects:  het ~ cell_type 
+                              Value Std.Error  DF    t-value p-value
+(Intercept)               29.227273  3.667414 290   7.969449  0.0000
+cell_typeNaive B          -2.954545  1.658136 290  -1.781847  0.0758
+cell_typeMemory B         -4.363636  1.658136 290  -2.631651  0.0090
+cell_typeCD4+ Naive T    -12.818182  1.658136 290  -7.730476  0.0000
+cell_typeCD4+ Memory T   -19.545455  1.658136 290 -11.787605  0.0000
+cell_typeCD8+ Naive T    -12.181818  1.658136 290  -7.346693  0.0000
+cell_typeCD8+ Memory T   -18.818182  1.658136 290 -11.348997  0.0000
+cell_typeImmature NK      -2.272727  1.658136 290  -1.370652  0.1715
+cell_typeMature NK        -1.681818  1.658136 290  -1.014282  0.3113
+cell_typeCD14+ Monocytes  -2.181818  1.658136 290  -1.315826  0.1893
+cell_typeCD16+ Monocytes  -2.636364  1.658136 290  -1.589956  0.1129
+cell_typeCD11c+ mDCs      -1.363636  1.658136 290  -0.822391  0.4115
+cell_typeCD123+ pDCs       0.318182  1.658136 290   0.191891  0.8480
+cell_typeGranulocytes     -5.717036  1.702166 290  -3.358683  0.0009
+cell_typePlatelets        -1.917036  1.702166 290  -1.126234  0.2610
+ Correlation: 
+                         (Intr) cll_NB cll_MB c_CD4NT c_CD4MT c_CD8NT c_CD8MT cl_INK cl_MNK c_CD14M c_CD16M c_CD1m c_CD1p
+cell_typeNaive B         -0.226                                                                                          
+cell_typeMemory B        -0.226  0.500                                                                                   
+cell_typeCD4+ Naive T    -0.226  0.500  0.500                                                                            
+cell_typeCD4+ Memory T   -0.226  0.500  0.500  0.500                                                                     
+cell_typeCD8+ Naive T    -0.226  0.500  0.500  0.500   0.500                                                             
+cell_typeCD8+ Memory T   -0.226  0.500  0.500  0.500   0.500   0.500                                                     
+cell_typeImmature NK     -0.226  0.500  0.500  0.500   0.500   0.500   0.500                                             
+cell_typeMature NK       -0.226  0.500  0.500  0.500   0.500   0.500   0.500   0.500                                     
+cell_typeCD14+ Monocytes -0.226  0.500  0.500  0.500   0.500   0.500   0.500   0.500  0.500                              
+cell_typeCD16+ Monocytes -0.226  0.500  0.500  0.500   0.500   0.500   0.500   0.500  0.500  0.500                       
+cell_typeCD11c+ mDCs     -0.226  0.500  0.500  0.500   0.500   0.500   0.500   0.500  0.500  0.500   0.500               
+cell_typeCD123+ pDCs     -0.226  0.500  0.500  0.500   0.500   0.500   0.500   0.500  0.500  0.500   0.500   0.500       
+cell_typeGranulocytes    -0.220  0.487  0.487  0.487   0.487   0.487   0.487   0.487  0.487  0.487   0.487   0.487  0.487
+cell_typePlatelets       -0.220  0.487  0.487  0.487   0.487   0.487   0.487   0.487  0.487  0.487   0.487   0.487  0.487
+                         cll_tG
+cell_typeNaive B               
+cell_typeMemory B              
+cell_typeCD4+ Naive T          
+cell_typeCD4+ Memory T         
+cell_typeCD8+ Naive T          
+cell_typeCD8+ Memory T         
+cell_typeImmature NK           
+cell_typeMature NK             
+cell_typeCD14+ Monocytes       
+cell_typeCD16+ Monocytes       
+cell_typeCD11c+ mDCs           
+cell_typeCD123+ pDCs           
+cell_typeGranulocytes          
+cell_typePlatelets        0.478
+
+Standardized Within-Group Residuals:
+        Min          Q1         Med          Q3         Max 
+-4.64293046 -0.47452422 -0.01437442  0.53767871  3.66348522 
+
+Number of Observations: 326
+Number of Groups: 22 
