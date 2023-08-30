@@ -4,7 +4,7 @@ library(ggpubr)
 library("ggsci")
 options(scipen = 100) # prevent scientific notation
 
-my_theme = theme_classic() + theme(text = element_text(size = 20))
+my_theme = theme_classic() + theme(text = element_text(size = 16))
 
 pnums = read.csv(file="For paper/output/pnums.csv", stringsAsFactors = F)
 names(pnums) = c("id", "pnums")
@@ -222,23 +222,26 @@ s3cii = s3cii + stat_pvalue_manual(subset(s3_stats, cell%in%levels(dat_s3cii$cel
 
 # write out plots to files
 
-#tiff("output/sarah/proportions_t_b_nk_dr.tiff", width=800, height=400)
-#s3a
-#dev.off()
+#tiff("For paper/output/proportions_t_b_nk_dr.tiff", width=800, height=400)
+pdf("For paper/output/proportions_t_b_nk_dr.pdf", width=9, height=4.5)
+s3a
+dev.off()
 
-#tiff("output/sarah/ratios1.tiff", width=400, height=400)
-#s3bi
-#dev.off()
+#tiff("For paper/output/ratios1.tiff", width=400, height=400)
+pdf("For paper/output/ratios1.pdf", width=4.5, height=4.5)
+s3bi
+dev.off()
 
-#tiff("output/sarah/ratios2.tiff", width=400, height=400)
-#s3bii
-#dev.off()
+#tiff("For paper/output/ratios2.tiff", width=400, height=400)
+pdf("For paper/output/ratios2.pdf", width=4.5, height=4.5)
+s3bii
+dev.off()
 
-#tiff("output/sarah/proportions_of_dr_cells1.tiff", width=400, height=400)
-#s3ci
-#dev.off()
+pdf("For paper/output/proportions_of_dr_cells1.pdf", width=4.5, height=4.5)
+s3ci
+dev.off()
 
-#tiff("output/sarah/proportions_of_dr_cells2.tiff", width=400, height=400)
-#s3cii
-#dev.off()
+pdf("For paper/output/proportions_of_dr_cells2.pdf", width=4.5, height=4.5)
+s3cii
+dev.off()
 
